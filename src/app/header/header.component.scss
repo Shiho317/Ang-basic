@@ -19,14 +19,14 @@
       display: flex;
       list-style: none;
       gap: 1rem;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
 
     & li{
       cursor: pointer;
       padding: 0.5rem 0.7rem;
       border-radius: 1rem;
-      transition: all 0.3s ease;
+      transition: all 0.5s ease;
 
       &:hover{
         background-color: #ffffff5d;
@@ -42,14 +42,14 @@
       display: flex;
       list-style: none;
       gap: 1rem;
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
 
     & li{
       cursor: pointer;
       padding: 0.5rem 0.7rem;
       border-radius: 1rem;
-      transition: all 0.3s ease;
+      transition: all 0.5s ease;
 
       &:hover{
         background-color: #ffffff5d;

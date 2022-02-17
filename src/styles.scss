@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hind+Siliguri&family=Montserrat:wght@500&family=Noto+Sans&family=Poppins:wght@200;300&family=Roboto&display=swap');
 
 *{
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root{
   --black-color: #000000;
   --white-color: #ffffff;
+  --grey-color: #dcdcdc;
 }
