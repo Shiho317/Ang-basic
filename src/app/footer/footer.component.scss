@@ -1,0 +1,200 @@
+.footer{
+  background-color: var(--black-color);
+  color: var(--white-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  &-wrap{
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & img{
+      width: 4rem;
+    }
+
+    & h4{
+      height: 4rem;
+      width: 8rem;
+
+      &:hover{
+        border-bottom: 1px solid var(--white-color);
+      }
+    }
+  }
+
+  &-contents{
+    display: flex;
+    gap: 12rem;
+
+    & .company{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      & ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-weight: 300;
+        font-size: 0.9rem;
+        cursor: pointer;
+
+        & li:hover{
+          color: grey;
+        }
+      }
+    }
+
+    & .products{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      & ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-weight: 300;
+        font-size: 0.9rem;
+        cursor: pointer;
+
+        & li:hover{
+          color: grey;
+        }
+      }
+    }
+
+    & .citizenship{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      & ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-weight: 300;
+        font-size: 0.9rem;
+        cursor: pointer;
+
+        & li:hover{
+          color: grey;
+        }
+      }
+    }
+
+    & .travel{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      & ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-weight: 300;
+        font-size: 0.9rem;
+        cursor: pointer;
+
+        & li:hover{
+          color: grey;
+        }
+      }
+    }
+
+  }
+
+  & .info{
+    display: flex;
+    justify-content: space-between;
+
+    &-icons{
+      display: flex;
+      align-items: center;
+
+      & .network{
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        font-size: 1rem;
+
+        & li{
+          width: 3rem;
+          height: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover{
+            background-color: #ffffff60;
+          }
+        }
+      }
+
+      & .option{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+
+        & li{
+          height: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0 1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover{
+            background-color: #ffffff60;
+          }
+        }
+      }
+    }
+
+    & .application{
+      display: flex;
+      gap: 1rem;
+
+      & img{
+        width: 9rem;
+      }
+    }
+  }
+
+  & .copyright{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: grey;
+
+    & ul{
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      cursor: pointer;
+
+      & li:hover{
+        color: rgb(100, 100, 100);
+      }
+    }
+  }
+
+}
