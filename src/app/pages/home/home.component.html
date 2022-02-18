@@ -1,19 +1,23 @@
 <div class="home">
 
-  <div class="first-sec">
+  <div class="first-sec" [ngClass]="bgImage">
     <div class="board">
       <div class="board-nav">
         <ul>
-          <li><i class="fas fa-signal"></i><p>Drive or deliver</p></li>
-          <li><i class="fas fa-utensils"></i><p>Eat</p></li>
-          <li><i class="fas fa-car"></i><p>Ride</p></li>
+          <li (click)="toDriver()"><i class="fas fa-signal"></i><p>Drive or deliver</p></li>
+          <li (click)="toEat()"><i class="fas fa-utensils"></i><p>Eat</p></li>
+          <li (click)="toRide()"><i class="fas fa-car"></i><p>Ride</p></li>
+          <div [ngClass]="moveBorder" class="border-bottom"></div>
         </ul>
       </div>
       <div class="board-card">
-        <h1>Get in the driver’s seat and get paid</h1>
-        <p>Drive on the platform with the largest network of active riders.</p>
-        <button>Sign up to drive</button>
-        <a href="#">Learn more about driving and delivering</a>
+        <h1>{{cardTitle}}</h1>
+        <p>{{cardSubtitle}}</p>
+        <div class="button-wrap">
+          <button>{{cardButton}}</button>
+          <a href="#" [ngClass]="displayPartner">{{cardPartner}}</a>
+        </div>
+        <a href="#" [ngClass]="displayLink">{{cardLink}}</a>
       </div>
     </div>
   </div>
