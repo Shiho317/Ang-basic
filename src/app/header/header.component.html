@@ -2,10 +2,22 @@
   <div class="header-left">
     <img src="../../assets/images/uber-logo.jpeg" alt="logo">
     <ul>
-      <li>Company <i class="bi bi-chevron-down"></i></li>
+      <li (click)="toggleCompany()">Company <i class="fas {{arrowIcon}}"></i></li>
       <li>Safety</li>
       <li>Help</li>
       <li>COVID-19 resources</li>
+      <div [ngClass]="dropNav" class="company-menu">
+        <ul>
+          <li>About us</li>
+          <li>Our offerings</li>
+          <li>How Uber works</li>
+          <li>Global citizenship</li>
+          <li>Newsroom</li>
+          <li>Investor relations</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
+      </div>
     </ul>
   </div>
   <div class="header-right">
