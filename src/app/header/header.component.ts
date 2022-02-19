@@ -9,6 +9,7 @@ export class HeaderComponent implements OnInit {
 
   public arrowIcon: string = 'fa-angle-down';
   public dropNav: string = 'drop-up';
+  public dropMenu: string = 'drop-up';
 
   constructor() { }
 
@@ -23,8 +24,15 @@ export class HeaderComponent implements OnInit {
       this.arrowIcon = 'fa-angle-down';
       this.dropNav = 'drop-up';
     };
-    
-  }
+  };
+
+  toggleProducts(): void{
+    if(this.dropMenu === 'drop-up'){
+      this.dropMenu = 'drop-down';
+    }else{
+      this.dropMenu = 'drop-up';
+    }
+  };
 
   
 

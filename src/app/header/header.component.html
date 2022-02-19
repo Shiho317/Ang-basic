@@ -23,9 +23,23 @@
   <div class="header-right">
     <ul>
       <li><i class="fas fa-globe"></i>EN</li>
-      <li><i class="bi bi-grid-3x3-gap-fill"></i> Products</li>
+      <li (click)="toggleProducts()"><i class="bi bi-grid-3x3-gap-fill"></i> Products</li>
       <li><i class="bi bi-person"></i> Log in</li>
       <li class="bg-white">Sign Up</li>
+      <div [ngClass]="dropMenu" class="products-menu">
+        <ul>
+          <li><i class="bi bi-house-fill"></i>Home</li>
+          <li><i class="fas fa-car"></i>Ride</li>
+          <li><i class="fab fa-gg-circle"></i>Drive</li>
+          <li><i class="fas fa-utensils"></i>Eat</li>
+          <li><i class="fas fa-glass-cheers"></i>Merchants</li>
+          <li><i class="fas fa-bus"></i>Freight</li>
+          <li><i class="fas fa-bicycle"></i>Bike & scoot</li>
+          <li><i class="fas fa-train"></i>Transit</li>
+          <li><i class="bi bi-bag-fill"></i>Business</li>
+          <li><i class="fas fa-money-bill"></i>Money</li>
+        </ul>
+      </div>
     </ul>
   </div>
 </div>
